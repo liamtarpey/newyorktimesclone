@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'NexaBold';
+  src:  url('/dist/fonts/nexa_bold.otf');
+}
+
+h1 {
+  &.landing-title {
+    font-family: 'NexaBold', arial, sans-serif;
+    color: $col-white;
+    text-transform: uppercase;
+    font-size: 340%;
+    margin-bottom: 10px;
+  }
+}
