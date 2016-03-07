@@ -1,12 +1,12 @@
 .app-header {
   background: $col-green;
-  padding: 12px 24px;
-  a {
-    color: $col-white;
-    display: block;
-    width: 100px;
-    img {
-
+  border-bottom: 5px solid lighten($col-green, 10%);
+  .header-inner {
+    padding: 12px 24px;
+    a {
+      color: $col-white;
+      display: block;
+      width: 120px;
     }
   }
 }

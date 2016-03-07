@@ -1,3 +1,5 @@
-form(ng-submit="Search.Perform()")
-  input(type="text" ng-model="Search.Value")
-  button.btn Search
+#search-form
+  form(ng-submit="Search.Perform()")
+    span Search for an article
+    input(type="text" ng-model="Search.Value")
+    button.btn Search

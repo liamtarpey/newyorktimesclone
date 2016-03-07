@@ -1,0 +1,13 @@
+#search-form {
+  padding: 24px;
+  form {
+    span {
+      display: block;
+      margin-bottom: 12px;
+      @include font(20);
+    }
+    input {
+      margin-bottom: 12px;
+    }
+  }
+}

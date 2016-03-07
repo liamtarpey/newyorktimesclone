@@ -3,12 +3,29 @@
   src:  url('/dist/fonts/nexa_bold.otf');
 }
 
+.nexa {
+  font-family: 'NexaBold', arial, sans-serif;
+}
+
+.georgia {
+  font-family: 'georgia';
+}
+
 h1 {
   &.landing-title {
-    font-family: 'NexaBold', arial, sans-serif;
+    @extend .nexa;
     color: $col-white;
     text-transform: uppercase;
-    font-size: 340%;
-    margin-bottom: 10px;
+    font-size: 250%;
+    margin-bottom: 0;
   }
+}
+
+h2,h3,h4,h5,h6,p,a {
+  @extend .georgia;
+}
+
+h2 {
+  @include font(30);
+  margin-bottom: 24px;
 }

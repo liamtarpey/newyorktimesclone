@@ -3,10 +3,28 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%;
-  max-width: 550px;
+  max-width: 320px;
+  display: block;
+  border: 1px solid $col-grey;
+  padding: 12px 10px;
+}
+
+.btn {
+  background: $col-green;
+  color: $col-white;
+  border-radius: 0;
   border: none;
-  padding: 7px 10px;
-  height: 44px;
-  line-height: 44px;
-  background: rgba(255,255,255,.7);
+  border-left: 5px solid lighten($col-green, 10%);
+  @include font(16);
+  @extend .nexa;
+  padding: 5px 36px 0px 36px;
+  line-height: 36px;
+  &:hover {
+    cursor: pointer;
+    background: lighten($col-green, 5%);
+    border-left: 3px solid lighten($col-green, 15%);
+  }
+  &:focus {
+    outline: none;
+  }
 }
